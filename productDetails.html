@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/product-details.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Product Details Page</title>
+  </head>
+  <body>
+    <!-- Start Navigation Bar -->
+    <header class="header" id="header">
+      <div class="logo">
+        <a href="/products.html" class="logo-link">
+          <span class="icon">E</span>
+          <span class="logo-text">EliteShop</span>
+        </a>
+      </div>
+      <div class="login">
+        <a href="/cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="login-text">Cart</span>
+          <span class="counter" id="counter"></span>
+        </a>
+        <a href="/login.html" class="login-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="login-text">Login</span>
+        </a>
+        <a href="/login.html" class="logout-link hide">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="logout-text">Logout</span>
+        </a>
+      </div>
+    </header>
+    <!-- Back -->
+    <!-- <a href="products.html" class="back">← Back to Products</a> -->
+    <div class="container">
+      <div class="cart-arrow">
+        <a href="/products.html">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span class="cart-arrow-text">Back To Products</span>
+        </a>
+      </div>
+      <!-- Banner -->
+      <div class="banner">
+        <p id="banner">Product Details</p>
+      </div>
+
+      <!-- Product Details -->
+      <div class="product-details" style="text-align: center">
+        <div class="product-image">
+          <img id="productImg" src="" alt="" style="width: 60%" />
+        </div>
+        <div class="product-info">
+          <span class="category" id="category"></span>
+          <h2 id="title"></h2>
+
+          <div class="rating">
+            <i class="fa-solid fa-star"></i> <span id="rating"></span>
+            <span class="review">
+              <span class="reviews"></span>
+              reviews
+            </span>
+          </div>
+          <h3 id="price"></h3>
+          <p id="description"></p>
+
+          <div class="details-cart">
+            <div class="quantity">
+              <button class="decrease">-</button>
+              <span class="quan">1</span>
+              <button class="increase">+</button>
+            </div>
+            <button id="addToCart">
+              <i class="fa-solid fa-cart-plus"></i>Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/js/product-details.js"></script>
+</html>

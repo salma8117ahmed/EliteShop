@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Login Page</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="logo">
+        <a href="/products.html" class="logo-link">
+          <span class="icon">E</span>
+          <span class="logo-text">EliteShop</span>
+        </a>
+      </div>
+      <div class="login">
+        <!-- <a href="/cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="login-text">Cart</span>
+        </a> -->
+        <a href="/login.html" class="login-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="login-text">Login</span>
+        </a>
+      </div>
+    </header>
+
+    <div class="content">
+      <div id="left">
+        <img src="./images/login.png" alt="shop image" />
+      </div>
+
+      <div id="right">
+        <div id="con">
+          <h2>Welcome Back</h2>
+          <p>Sign in to your account to continue shopping</p>
+        </div>
+        <form id="loginform">
+          <label for="email">Email</label><br />
+          <input
+            type="text"
+            id="email"
+            required
+            placeholder="you@example.com"
+          /><br />
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="******"
+          /><br />
+          <button type="button" onclick="login()">Sign In</button>
+        </form>
+        <p class="signup">
+          Don't have an account? <a href="./register.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="/js/login.js"></script>
+</html>

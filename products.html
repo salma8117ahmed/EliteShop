@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Product Page</title>
+  </head>
+  <body>
+    <!-- Start Navigation Bar -->
+    <header class="header" id="header">
+      <div class="logo">
+        <a href="/products.html" class="logo-link">
+          <span class="icon">E</span>
+          <span class="logo-text">EliteShop</span>
+        </a>
+      </div>
+      <div class="login">
+        <a href="/cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="login-text">Cart</span>
+          <span class="counter" id="counter"></span>
+        </a>
+        <a href="/login.html" class="login-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="login-text">Login</span>
+        </a>
+        <a href="/login.html" class="logout-link hide">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="logout-text">Logout</span>
+        </a>
+      </div>
+    </header>
+    <!-- End Navigation Bar -->
+    <!-- Product Page -->
+    <div class="container">
+      <div class="product-list">
+        <h2 id="p1">Our Products</h2>
+        <p>Discover our Wide range of premium products</p>
+      </div>
+
+      <div class="product-container" id="products-container"></div>
+    </div>
+  </body>
+  <script src="js/product.js"></script>
+</html>

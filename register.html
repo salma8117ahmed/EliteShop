@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/register.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Register Page</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+      <div class="logo">
+        <a href="/products.html" class="logo-link">
+          <span class="icon">E</span>
+          <span class="logo-text">EliteShop</span>
+        </a>
+      </div>
+      <div class="login">
+        <!-- <a href="/cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="login-text">Cart</span>
+        </a> -->
+        <a href="/login.html" class="login-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="login-text">Login</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Register Box -->
+    <div class="box">
+      <div class="content">
+        <h3>Create Account</h3>
+        <p class="subtitle">Sign up to start shopping with us</p>
+
+        <form id="registerForm">
+          <div class="input-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="John Doe" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="........"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="........"
+              required
+            />
+          </div>
+
+          <button type="button" class="btn-submit" onclick="register()">
+            Create Account
+          </button>
+        </form>
+
+        <p class="footer-text">
+          Already have an account? <a href="login.html">Sign in</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="/js/register.js"></script>
+</html>

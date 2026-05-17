@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/cart.css" />
+    <link rel="stylesheet" href="/index.css" />
+
+    <title>Cart Page</title>
+  </head>
+  <body>
+    <!-- Cart Page -->
+    <!-- Start Navigation Bar -->
+      <header class="header" id="header">
+      <div class="logo">
+        <a href="/products.html" class="logo-link">
+          <span class="icon">E</span>
+          <span class="logo-text">EliteShop</span>
+        </a>
+      </div>
+      <div class="login">
+        <a href="/cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="login-text">Cart</span>
+          <span class="counter" id="counter"></span>
+        </a>
+        <a href="/login.html" class="login-link">
+          <i class="fa-regular fa-user"></i>
+          <span class="login-text">Login</span>
+        </a>
+         <a href="/login.html" class="logout-link hide">
+          <i class="fa-solid fa-right-from-bracket"></i>
+          <span class="logout-text">Logout</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- End Navigation Bar -->
+
+    <!-- Start Cart Section  -->
+    <section class="cart-section">
+
+      <div class="container">
+        <div class="cart-arrow">
+          <a href="/products.html">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="cart-arrow-text">Continue Shopping</span>
+          </a>
+        </div>
+        <div class="cart-empty hide"> 
+          <img src="/images/box.png" alt="" class="cart-box">
+          <p class="empty-text">Your cart is empty</p>
+          <h4 class="empty-head">Add some products to get started</h4>
+          <a href="/products.html" class="cart-link">Continue Shopping</a>
+        </div>
+        <div class="cart">
+          <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <p>Review your items and checkout</p>
+          </div>
+          <div class="cart-body">
+            <div class="card">
+              <!-- <div class="cart-items">
+                <img
+                  src="/images/shoes.png"
+                  alt="#"
+                  class="prod-image"
+                  id="item-image"
+                />
+                <div class="cart-detail">
+                  <p class="name" id="item-name">Nike Air Max 270</p>
+                  <p class="tag" id="item-tag">Men's Shoes</p>
+                  <p class="price" id="item-price">$60.00</p>
+                </div>
+                <div class="cart-control">
+                  <img
+                    src="/images/delete.png"
+                    alt="#"
+                    class="cart-delete"
+                    id="item-delete"
+                  />
+                  <div class="add">
+                    <button class="minus">-</button>
+                    <span class="quantity" id="item-quantity">1</span>
+                    <button class="plus">+</button>
+                  </div>
+                </div>
+              </div> -->
+          </div>
+            <div class="cart-order">
+              <h3 class="order-title">Order Summary</h3>
+              <div class="order-texts">
+                <p class="order-text">Subtotal</p>
+                <p class="order-price" id="Subtotal-price">$60.00</p>
+              </div>
+              <div class="order-texts">
+                <p class="order-text">Shipping</p>
+                <p class="order-price free">Free</p>
+              </div>
+              <div class="order-texts">
+                <p class="order-text">Tax (10%)</p>
+                <p class="order-price">$10.00</p>
+              </div>
+              <div class="order-texts order-total">
+                <p class="order-toatal">Total</p>
+                <p class="order-total-price" id="total-price">$80.00</p>
+              </div>
+              <div class="order-button">
+                <button class="order-checkout">Proceed to Checkout</button>
+                <button class="order-continue"><a href="/products.html">Continue Shopping</a></button>
+              </div>
+            </div>
+          </div>
+        </section>
+    <!-- End Cart Section  -->
+  </body>
+  <script src="/js/cart.js"></script>
+</html>
