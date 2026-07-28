@@ -70,5 +70,6 @@ xhr.send();
 
 function logout() {
   localStorage.removeItem("currentuser");
+  localStorage.removeItem("cart");
 }
 logoutBtn.addEventListener("click", logout);
