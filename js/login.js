@@ -21,7 +21,7 @@ function login() {
   }
   if (found) {
     localStorage.setItem("currentuser", email);
-    window.location.href = "products.html";
+    window.location.href = "index.html";
   } else {
     alert("Wrong email or password");
   }
