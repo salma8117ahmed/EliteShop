@@ -9,7 +9,7 @@
   border-radius: 10px;
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url("/images/product-list.png");
+    url("../images/product-list.png");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -27,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  /* gap: 56px; */
 }
 
 .item .title {
@@ -49,12 +50,15 @@
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
+.item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.03);
+}
 .item img {
   width: 100%;
-
   margin-bottom: 15px;
-  background-color: #f3f3f5;
+  /* background-color: #f3f3f5; */
 }
 
 .item .price {
