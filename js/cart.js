@@ -156,6 +156,7 @@ function cart(arr) {
 cart(arr);
 function logout() {
   localStorage.removeItem("currentuser");
+  localStorage.removeItem("cart");
   window.location.href = "login.html";
 }
 logoutBtn.addEventListener("click", logout);
