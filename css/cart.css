@@ -86,7 +86,7 @@
 .cart .cart-header {
   background-image:
     linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
-    url("/images/cart-section.png");
+    url("../images/cart-section.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -132,6 +132,11 @@
   width: 20%;
   margin-right: 10px;
   border-radius: 10px;
+}
+.cart .cart-body .cart-items:hover {
+  transform: translate(10px, -10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .cart .cart-body .cart-items .cart-detail {
   width: 100%;
