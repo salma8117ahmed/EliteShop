@@ -1,72 +1,95 @@
-/* ===============login============ */
+/* =============== Login Styles ============ */
 
 .content {
-  margin: 40px;
-  padding: 40px;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 0 30px;
   display: flex;
-  gap: 40px;
+  gap: 30px;
   align-items: stretch;
+  min-height: 480px;
 }
 
 #left {
   flex: 1;
+  display: flex;
 }
 
 #left img {
   width: 100%;
   height: 100%;
+  max-height: 500px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
+
 #right {
   flex: 1;
   background: #ffffff;
-  padding: 30px;
-  border-radius: 10px;
+  padding: 40px 35px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 #con h2 {
-  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #030213;
+  margin-bottom: 6px;
 }
+
 #con p {
-  color: #c5c5c6;
+  color: #777777;
+  font-size: 14px;
   margin-bottom: 25px;
 }
 
 #loginform label {
-  font-weight: 700;
-  display: inline-block;
-  margin-bottom: 4px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
   font-size: 14px;
+  color: #333333;
 }
 
 #right input {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: none;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid transparent;
   border-radius: 8px;
   background-color: #f3f3f5;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+#right input:focus {
+  border-color: #030213;
+  background-color: #ffffff;
 }
 
 #loginform button {
   width: 100%;
-  height: 40px;
+  height: 46px;
   border: none;
   border-radius: 10px;
   background-color: #030213;
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
 }
 
 #loginform button:hover {
-  background-color: #e9ebef;
-  color: #030213;
+  background-color: #16a34a;
 }
 
 .signup {
@@ -74,17 +97,45 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 15px;
-  color: #c5c5c6;
+  margin-top: 20px;
+  color: #666666;
+  font-size: 14px;
 }
 
 .signup a {
-  margin-left: 5px;
+  margin-left: 6px;
   color: #030213;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .signup a:hover {
   color: #fbbf24;
   text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  #left {
+    display: none;
+  }
+  #right {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 0 15px;
+  }
+  #right {
+    padding: 25px 18px;
+  }
+  #con h2 {
+    font-size: 20px;
+  }
 }

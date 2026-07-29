@@ -1,75 +1,81 @@
 /* Register Box Styles */
 .box {
-  width: 100%;
-  max-width: 450px;
-  background: white;
-  margin: 60px auto;
-  padding: 40px;
-  border-radius: 15px;
-  /* Optional: box-shadow to match the clean look */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 460px;
+  background: #ffffff;
+  margin: 50px auto;
+  padding: 40px 35px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .box h3 {
   font-size: 1.5rem;
+  font-weight: 700;
   color: #030213;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   text-align: left;
 }
 
 .subtitle {
   font-size: 0.9rem;
-  color: #666;
-  margin-bottom: 30px;
+  color: #777777;
+  margin-bottom: 25px;
   text-align: left;
 }
 
 /* Input Styles */
 .input-group {
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .input-group label {
   display: block;
   font-weight: 600;
   font-size: 14px;
-  margin-bottom: 8px;
-  color: #333;
+  margin-bottom: 6px;
+  color: #333333;
 }
 
 .input-group input {
   width: 100%;
   padding: 12px 15px;
   border-radius: 8px;
-  border: none;
-  background-color: #e9ebef; /* اللون المطلوب */
+  border: 1px solid transparent;
+  background-color: #f3f3f5;
   font-size: 14px;
   outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #030213;
+  background-color: #ffffff;
 }
 
 .input-group input::placeholder {
-  color: #999;
+  color: #999999;
 }
 
 /* Button Style */
 .btn-submit {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 14px;
-  background: #030213; /* متناسق مع الهيدر */
+  background: #030213;
   color: white;
   border: none;
   border-radius: 10px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
 .btn-submit:hover {
-  background-color: #e9ebef;
-  color: #030213;
+  background-color: #16a34a;
 }
 
 /* Footer Link */
@@ -77,16 +83,29 @@
   margin-top: 20px;
   font-size: 14px;
   text-align: center;
-  color: #666;
+  color: #666666;
 }
 
 .footer-text a {
   color: #030213;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
+  margin-left: 4px;
 }
 
 .footer-text a:hover {
   color: #fbbf24;
   text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media screen and (max-width: 480px) {
+  .box {
+    width: 95%;
+    margin: 25px auto;
+    padding: 25px 20px;
+  }
+  .box h3 {
+    font-size: 1.3rem;
+  }
 }
